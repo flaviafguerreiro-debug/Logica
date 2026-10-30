@@ -1,7 +1,0 @@
-lista = [
-    "pão" ,
-    "leite" ,       
-    "ovos" ,
-]
-
-print(lista)
