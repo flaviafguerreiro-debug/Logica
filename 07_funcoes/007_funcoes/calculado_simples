@@ -1,0 +1,42 @@
+# Projeto 4 - Calculadora Simples
+
+# Entrada de dados
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+operador = input("Digite o operador (+, -, *, /): ")
+
+# Tomada de decisão
+if operador == "+":
+    resultado = num1 + num2
+    # Exibir inteiro sem casas decimais
+    if resultado.is_integer():
+        print(int(resultado))
+    else:
+        print(resultado)
+
+elif operador == "-":
+    resultado = num1 - num2
+    if resultado.is_integer():
+        print(int(resultado))
+    else:
+        print(resultado)
+
+elif operador == "*":
+    resultado = num1 * num2
+    if resultado.is_integer():
+        print(int(resultado))
+    else:
+        print(resultado)
+
+elif operador == "/":
+    if num2 == 0:
+        print("Não é possível dividir por zero")
+    else:
+        resultado = num1 / num2
+        if resultado.is_integer():
+            print(int(resultado))
+        else:
+            print(resultado)
+
+else:
+    print("Operador inválido")
